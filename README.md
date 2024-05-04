@@ -35,14 +35,18 @@ cd login-pais
 ### Instala las Dependencias
 
 ```bash
-npm install
+yarn install
+```
+
+### Corre el proyecto
+
+```bash
+yarn serve
 ```
 
 ### Licencia
 
 Este proyecto está bajo la Licencia MIT.
-
-Este archivo README proporciona una descripción general del proyecto, instrucciones para la instalación y configuración, y una estructura básica para el proyecto.
 
 ### Configuración personalizada
 

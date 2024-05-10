@@ -1,13 +1,24 @@
 <template>
   <div class="main-container">
-    <router-view /> 
+    <router-view />
+    <BottomMenu v-if="showBottomMenu" /> 
   </div>
 </template>
 
 <script>
+import BottomMenu from './components/BottomMenu.vue';
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    BottomMenu
+  },
+  computed: {
+    showBottomMenu() {
+      const hiddenRoutes = ['/login', '/register', '/splash-screen'];
+      return !hiddenRoutes.includes(this.$route.path);
+    }
+  }
 }
 </script>
 

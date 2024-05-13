@@ -1,52 +1,77 @@
 <template>
-    <div class="services-menu">
-      <h1>Menú de Servicios</h1>
-      <ul>
-        <li>
-          <router-link to="/recarga">Recarga</router-link>
-        </li>
-        <li>
-          <router-link to="/pagos">Pagos</router-link>
-        </li>
-        <li>
-          <router-link to="/recaudo">Recaudo de Impuestos</router-link>
-        </li>
-      </ul>
+  <div class="services-menu">
+    <div class="grid-container">
+      <router-link to="/recarga" class="menu-item">
+        <font-awesome-icon icon="fa-solid fa-dollar-sign" class="fa-2x"/>
+        <span>Recarga</span>
+      </router-link>
+      <router-link to="/pagos" class="menu-item">
+        <font-awesome-icon icon="fa-solid fa-credit-card" class="fa-2x"/>
+        <span>Pagos</span>
+      </router-link>
+      <router-link to="/recaudo" class="menu-item">
+        <font-awesome-icon icon="fa-solid fa-file-invoice-dollar" class="fa-2x"/>
+        <span>Recaudo de Impuestos</span>
+      </router-link>
+      <router-link to="/other" class="menu-item">
+        <font-awesome-icon icon="fa-solid fa-coins" class="fa-2x"/>
+        <span>Otra Función</span>
+      </router-link>
     </div>
-  </template>
+  </div>
+</template>
   
   <script>
   export default {
     name: 'ServicesMenu'
   };
   </script>
-  
+
   <style scoped>
   .services-menu {
     max-width: 400px;
     margin: auto;
     padding: 1rem;
-    border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
+    height: 100vh;
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
+
+  .fa-2x  {
+    fill: white; 
   }
-  li {
-    margin-bottom: 1rem;
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
   }
-  router-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    color: white;
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #007bff;
-    text-decoration: none;
+    color: white;
+    padding: 12px;
     border-radius: 4px;
+    text-decoration: none;
+    height: 130px; 
+    box-sizing: border-box; 
   }
-  router-link:hover {
+
+  .menu-item span {
+    line-height: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .menu-item:hover {
     background-color: #0056b3;
+  }
+  
+  font-awesome-icon {
+    margin-bottom: 5px;
   }
   </style>
   

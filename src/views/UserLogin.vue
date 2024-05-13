@@ -1,4 +1,3 @@
-<!-- UserLogin.vue -->
 <template>
     <div class="login-container">
     <img class="login-img" alt="Vue logo" src="../assets/logo.png">

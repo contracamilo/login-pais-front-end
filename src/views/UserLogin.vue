@@ -25,10 +25,10 @@
 </template>
 
 <script>
-import axios from 'axios'; // Asegúrate de instalar Axios: npm install axios
+import axios from 'axios'; 
 
 export default {
-  name: 'UserLogin', // Asegúrate de que el nombre del componente sea multi-word
+  name: 'UserLogin', 
   data() {
     return {
       username: '',

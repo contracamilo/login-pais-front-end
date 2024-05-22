@@ -13,7 +13,7 @@
             <input type="password" id="password" v-model="password" required />
           </div>
       </div>
-        <button type="submit">Ingresar</button>
+        <button  @click.prevent="goToProfile()">Ingresar</button>
         <p class="error" v-if="errorMessage">{{ errorMessage }}</p>
         <p class="small-text">
           Ingresa con tus credenciales o
@@ -56,6 +56,9 @@ export default {
     },
     goToRegisterUser() {
       this.$router.push({ name: 'register' });
+    },
+    goToProfile() {
+      this.$router.push({ name: 'user-profile' });
     }
   }
 };

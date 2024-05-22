@@ -1,7 +1,7 @@
 <template>
   <div class="services-menu">
     <div class="grid-container">
-      <router-link to="/recarga" class="menu-item">
+      <router-link to="/payments" class="menu-item">
         <font-awesome-icon icon="fa-solid fa-dollar-sign" class="fa-2x"/>
         <span>Recarga</span>
       </router-link>

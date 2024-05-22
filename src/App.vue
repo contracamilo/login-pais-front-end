@@ -15,7 +15,7 @@ export default {
   },
   computed: {
     showBottomMenu() {
-      const hiddenRoutes = ['/login', '/register', '/splash-screen'];
+      const hiddenRoutes = ['/', '/login', '/register', '/splash-screen'];
       return !hiddenRoutes.includes(this.$route.path);
     }
   }

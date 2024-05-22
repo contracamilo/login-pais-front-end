@@ -5,6 +5,7 @@ import ServicesMenu from '@/views/ServicesMenu.vue';
 import UserProfile from '@/views/UserProfile.vue';
 import SplashScreen from '@/views/SplashScreen.vue';
 import TermsAndConditions from '@/views/Terms.vue';
+import UserPayments from '@/views/Payment.vue';
 
 
 const routes = [
@@ -13,6 +14,7 @@ const routes = [
   { path: '/register', name: 'register', component: UserRegister },
   { path: '/services-menu', name: 'services-menu', component: ServicesMenu },
   { path: '/user-profile', name: 'user-profile', component: UserProfile },
+  { path: '/payments', name: 'payments', component: UserPayments },
   { path: '/terms_and_conditions', name: 'terms_and_conditions', component: TermsAndConditions }
   
 ];
